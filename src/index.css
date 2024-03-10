@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+h1 {
+  @apply text-7xl font-extrabold leading-[98px];
+}
+
+h2 {
+  @apply text-5xl font-extrabold leading-[4rem];
+}
+
+h3 {
+  @apply text-4xl font-extrabold leading-[54px];
+}
+
+h4 {
+  @apply text-[28px] font-extrabold leading-[40px];
+}
+
+h5 {
+  @apply text-2xl font-semibold leading-8;
+}
+
+h6 {
+  @apply text-xl font-medium leading-[30px];
+}
