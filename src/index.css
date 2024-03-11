@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 body {
+  @apply bg-slate-50;
   font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
