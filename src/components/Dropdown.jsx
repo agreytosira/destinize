@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import { RiArrowDownSFill } from 'react-icons/ri'
-import { FaChevronDown } from 'react-icons/fa6'
+import { RiArrowDownSFill, RiArrowUpSFill } from 'react-icons/ri'
+import { FaChevronDown, FaChevronUp } from 'react-icons/fa6'
 
 const Dropdown = ({ id, children, items, className, type }) => {
   const [isOpen, setIsOpen] = useState(false)
@@ -13,7 +13,7 @@ const Dropdown = ({ id, children, items, className, type }) => {
     <div className='relative inline-block text-left'>
       <div>
         <button type='button' className={`${className} inline-flex items-center justify-center w-full gap-2 text-sm font-medium bg-transparent text-slate-600`} id={`dropdown-${id}`} aria-haspopup='true' aria-expanded={isOpen ? 'true' : 'false'} onClick={toggleDropdown}>
-          {children} {type === 'chevron' ? <FaChevronDown /> : <RiArrowDownSFill />}
+          {children} {isOpen ? type === 'chevron' ? <FaChevronUp /> : <RiArrowUpSFill /> : type === 'chevron' ? <FaChevronDown /> : <RiArrowDownSFill />}
         </button>
       </div>
 
