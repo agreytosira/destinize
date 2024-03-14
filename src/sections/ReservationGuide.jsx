@@ -1,6 +1,6 @@
 function ReservationGuide() {
     return (
-        <div className='container my-12'>
+        <div className='container my-16'>
             <div className='grid grid-cols-2 items-center gap-4'>
                 <div className='flex flex-col'>
                     <div className='flex flex-col gap-2'>
