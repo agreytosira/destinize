@@ -7,7 +7,7 @@ function FavoriteDestination() {
         <div className='container '>
             <div className='flex items-center justify-between mb-12'>
                 <div className='flex flex-col items-start gap-2'>
-                    <span className='font-bold tracking-[.25rem] text-blue-600'>DESTINASI FAVORIT</span>
+                    <span className='subtitle'>DESTINASI FAVORIT</span>
                     <h2>Temukan Destinasi Favoritmu </h2>
                 </div>
                 <Link to='/destination' className='flex items-center gap-2 font-semibold text-blue-600'>
