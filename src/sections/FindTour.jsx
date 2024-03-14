@@ -8,7 +8,7 @@ function FindTour() {
                     <p>Fitur ini memungkinkan kamu untuk mencari tempat wisata atau tempat yang sedang populer di daerah kamu dengan begitu kamu akan selalu update dan gak kudet lagi 👍🏻</p>
                 </div>
                 <div className='mt-11'>
-                    <img src='/map.jpg' alt='Map' />
+                    <img src='/map.jpg' className='rounded-lg' alt='Map' />
                 </div>
             </div>
             <div className='grid grid-cols-3 gap-6 mt-14'>
