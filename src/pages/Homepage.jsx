@@ -1,5 +1,6 @@
 import FavoriteDestination from '../sections/FavoriteDestination';
 import FindTour from '../sections/FindTour';
+import GetToKnow from '../sections/GetToKnow';
 import Jumbotron from '../sections/Jumbotron';
 import ReservationGuide from '../sections/ReservationGuide';
 import Sponsor from '../sections/Sponsor';
@@ -12,6 +13,7 @@ function Homepage() {
             <FavoriteDestination />
             <ReservationGuide />
             <FindTour />
+            <GetToKnow />
         </main>
     );
 }

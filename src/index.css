@@ -28,7 +28,7 @@ h5 {
 }
 
 h6 {
-    @apply text-xl leading-[1.1] font-medium text-blue-950;
+    @apply text-xl leading-[1.4] font-medium text-blue-950;
 }
 
 p {
