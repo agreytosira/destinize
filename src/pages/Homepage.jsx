@@ -1,3 +1,4 @@
+import CallToAction from '../sections/CallToAction'
 import FAQSection from '../sections/FAQSection'
 import FavoriteDestination from '../sections/FavoriteDestination'
 import FindTour from '../sections/FindTour'
@@ -16,6 +17,7 @@ function Homepage() {
       <FindTour />
       <GetToKnow />
       <FAQSection />
+      <CallToAction />
     </main>
   )
 }
