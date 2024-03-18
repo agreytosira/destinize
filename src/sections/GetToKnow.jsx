@@ -4,16 +4,16 @@ import { FaChevronRight } from 'react-icons/fa6'
 function GetToKnow() {
   return (
     <div className='container my-32'>
-      <div className='flex items-center justify-between mb-12'>
-        <div className='flex flex-col items-start gap-2'>
+      <div className='flex flex-col items-center justify-between mb-12 text-center lg:text-left lg:flex-row'>
+        <div className='flex flex-col items-center gap-2 lg:items-start'>
           <span className='subtitle'>MENGENAL DESTINIZE</span>
           <h2>Galeri Pariwisata & Blog Travel</h2>
         </div>
-        <Link to='/destination' className='flex items-center gap-2 font-semibold text-blue-600'>
+        <Link to='/destination' className='flex items-center gap-2 mt-4 font-semibold text-blue-600 lg:mt-0'>
           Lihat Semua <FaChevronRight />
         </Link>
       </div>
-      <div className='grid grid-cols-4 gap-6'>
+      <div className='gap-6 lg:grid lg:grid-cols-4'>
         <div className='h-full col-span-1 overflow-hidden rounded-lg'>
           <div className='flex flex-col h-full'>
             <img src='/bromo.jpg' alt='Bromo' />
@@ -38,7 +38,7 @@ function GetToKnow() {
         </div>
       </div>
       <div className='flex flex-col p-8 bg-[url(/bg-tips.jpg)]  bg-cover mt-6 rounded-lg bg-no-repeat bg-top'>
-        <div className='w-1/2'>
+        <div className='w-full lg:w-1/2'>
           <h5 className='text-white'>Tips meminum air kawah biar lidah melepuh 😁</h5>
           <p className='my-4 text-slate-100'>Lidah melepuh? why nott, kawah bukan untuk dilihat kawan.. tapi untuk di minum.. rasakan kepanasan yang brutal 🔥</p>
           <ul className='flex items-center gap-2 '>

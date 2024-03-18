@@ -21,12 +21,12 @@ const FAQSection = () => {
 
   return (
     <div className='container my-16'>
-      <div className='flex items-center justify-between mb-12'>
-        <div className='flex flex-col items-start gap-2'>
+      <div className='flex flex-col items-center justify-between mb-12 lg:flex-row'>
+        <div className='flex flex-col items-center gap-2 text-center lg:items-start'>
           <span className='subtitle'>FREQUENTLY ASKED QUESTION</span>
           <h2>Pertanyaan yang Sering Diajukan </h2>
         </div>
-        <Link to='/destination' className='flex items-center gap-2 font-semibold text-blue-600'>
+        <Link to='/destination' className='flex items-center gap-2 mt-4 font-semibold text-blue-600 lg:mt-0'>
           Lihat Semua <FaChevronRight />
         </Link>
       </div>

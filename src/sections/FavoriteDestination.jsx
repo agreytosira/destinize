@@ -5,16 +5,16 @@ import destinations from '../data/destinations'
 function FavoriteDestination() {
   return (
     <div className='container '>
-      <div className='flex items-center justify-between mb-12'>
-        <div className='flex flex-col items-start gap-2'>
+      <div className='flex flex-col items-center justify-between mb-12 text-center'>
+        <div className='flex flex-col items-center gap-2 lg:items-start'>
           <span className='subtitle'>DESTINASI FAVORIT</span>
           <h2>Temukan Destinasi Favoritmu </h2>
         </div>
-        <Link to='/destination' className='flex items-center gap-2 font-semibold text-blue-600'>
+        <Link to='/destination' className='flex items-center gap-2 mt-4 font-semibold text-blue-600 lg:mt-0'>
           Lihat Semua <FaChevronRight />
         </Link>
       </div>
-      <div className='grid grid-cols-4 gap-6'>
+      <div className='grid grid-cols-2 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4'>
         {destinations.map((dest) => (
           <Link key={dest.id} to='/' className='relative overflow-hidden rounded-2xl group'>
             <img src={`/destination${dest.id}.jpg`} alt='' className='object-cover w-full transition-all duration-300 ease-in-out group-hover:scale-110' />

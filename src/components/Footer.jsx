@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer className='my-8'>
       <div className='container'>
-        <div className='grid grid-cols-6 gap-4'>
+        <div className='grid gap-4 sm:grid-cols-6'>
           <div className='col-span-3'>
             <img src='/icon-circle.png' alt='Icon Destinize Circle' className='mb-4' />
             <h5>Destinize</h5>
@@ -38,7 +38,7 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div>
+          <div className='col-span-1'>
             <h6 className='mb-4 font-bold'>Tentang</h6>
             <ul className='leading-8'>
               <li>
@@ -78,7 +78,7 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div>
+          <div className='col-span-1'>
             <h6 className='mb-4 font-bold'>Support</h6>
             <ul className='leading-8'>
               <li>
@@ -118,7 +118,7 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div>
+          <div className='col-span-1'>
             <h6 className='mb-4 font-bold'>FAQ</h6>
             <ul className='leading-8'>
               <li>
@@ -161,9 +161,9 @@ function Footer() {
         </div>
       </div>
       <div className='container mt-8'>
-        <div className='flex items-center justify-between'>
+        <div className='flex flex-col items-center justify-between sm:flex-row'>
           <p className='text-sm'>© 2024, All Rights Reserved</p>
-          <ul className='flex items-center gap-8 text-sm text-slate-500'>
+          <ul className='flex flex-row flex-wrap items-center gap-8 mt-4 text-sm text-slate-500 sm:flex-row'>
             <li>
               <Link to='/' className='transition-all duration-300 hover:text-blue-600 ease'>
                 Tentang Kami
