@@ -3,7 +3,7 @@ import { FaChevronRight } from 'react-icons/fa6'
 
 function GetToKnow() {
   return (
-    <div className='container my-32'>
+    <div className='container my-32' id='gallery'>
       <div className='flex flex-col items-center justify-between mb-12 text-center lg:text-left lg:flex-row'>
         <div className='flex flex-col items-center gap-2 lg:items-start'>
           <span className='subtitle'>MENGENAL DESTINIZE</span>

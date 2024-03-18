@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { FaMagnifyingGlass, FaBars } from 'react-icons/fa6'
 import Dropdown from './Dropdown'
 import { GoLocation } from 'react-icons/go'
@@ -19,17 +20,40 @@ function Navbar() {
     { id: 9, label: 'Romantic', items: ['Taman Sari', 'Pantai Nglambor', 'Pantai Drini', 'Pantai Baron', 'Pantai Kukup'] },
     { id: 10, label: 'Nature', items: ['Merapi', 'Merbabu', 'Sumbing', 'Sindoro', 'Lawu'] }
   ]
+  const [openMobileMenu, setOpenMobileMenu] = useState(false)
 
   return (
-    <header className='w-full py-4 divide-y'>
+    <header className='relative w-full py-4 divide-y'>
       <nav className='container fixed top-0 z-50 flex items-center justify-between px-4 py-4 bg-white lg:hidden'>
         <Link to='/'>
           <img src='/Logo.png' alt='Logo' className='w-2/5' />
         </Link>
-        <button className='p-3 text-white bg-blue-600 rounded-md'>
+        <button onClick={() => setOpenMobileMenu(!openMobileMenu)} className='p-3 text-white bg-blue-600 rounded-md'>
           <FaBars />
         </button>
       </nav>
+      {openMobileMenu && (
+        <div className='container fixed z-50 flex flex-col items-center justify-center w-full h-auto py-4 bg-white mt-14'>
+          <a href='#' className='inline-flex justify-center w-full px-4 py-2 font-semibold text-white bg-blue-600 rounded-md'>
+            Halaman Utama
+          </a>
+          <a href='#destination' className='inline-flex justify-center w-full px-4 py-2 font-semibold '>
+            Destinasi
+          </a>
+          <a href='#reservation' className='inline-flex justify-center w-full px-4 py-2 font-semibold '>
+            Cara Reservasi
+          </a>
+          <a href='#findtour' className='inline-flex justify-center w-full px-4 py-2 font-semibold '>
+            Wisata Terdekat
+          </a>
+          <a href='#gallery' className='inline-flex justify-center w-full px-4 py-2 font-semibold '>
+            Galeri
+          </a>
+          <a href='#faq' className='inline-flex justify-center w-full px-4 py-2 font-semibold '>
+            FAQ
+          </a>
+        </div>
+      )}
       <nav className='container items-center justify-between hidden mb-4 lg:flex border-t-transparent'>
         <Link to='/'>
           <img src='/Logo.png' alt='' className='pr-2 w-36' />

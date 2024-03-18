@@ -20,7 +20,7 @@ const FAQSection = () => {
   ]
 
   return (
-    <div className='container my-16'>
+    <div className='container my-16' id='faq'>
       <div className='flex flex-col items-center justify-between mb-12 lg:flex-row'>
         <div className='flex flex-col items-center gap-2 text-center lg:items-start'>
           <span className='subtitle'>FREQUENTLY ASKED QUESTION</span>

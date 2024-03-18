@@ -1,6 +1,6 @@
 function FindTour() {
   return (
-    <div className='container my-16'>
+    <div className='container my-16' id='findtour'>
       <div className='flex flex-col items-center text-center'>
         <div className='space-y-4'>
           <span className='subtitle'>CARI TEMPAT WISATA</span>
