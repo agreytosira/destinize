@@ -6,6 +6,7 @@ import { IoGlobeOutline } from 'react-icons/io5'
 import { Link } from 'react-router-dom'
 import { RiShoppingBasket2Line } from 'react-icons/ri'
 import { FiUser } from 'react-icons/fi'
+import { motion, AnimatePresence } from 'framer-motion'
 
 function Navbar() {
   const dropdownData = [
@@ -32,28 +33,31 @@ function Navbar() {
           <FaBars />
         </button>
       </nav>
-      {openMobileMenu && (
-        <div className='container fixed z-50 flex flex-col items-center justify-center w-full h-auto py-4 bg-white mt-14'>
-          <a href='#' className='inline-flex justify-center w-full px-4 py-2 font-semibold text-white bg-blue-600 rounded-md'>
-            Halaman Utama
-          </a>
-          <a href='#destination' className='inline-flex justify-center w-full px-4 py-2 font-semibold '>
-            Destinasi
-          </a>
-          <a href='#reservation' className='inline-flex justify-center w-full px-4 py-2 font-semibold '>
-            Cara Reservasi
-          </a>
-          <a href='#findtour' className='inline-flex justify-center w-full px-4 py-2 font-semibold '>
-            Wisata Terdekat
-          </a>
-          <a href='#gallery' className='inline-flex justify-center w-full px-4 py-2 font-semibold '>
-            Galeri
-          </a>
-          <a href='#faq' className='inline-flex justify-center w-full px-4 py-2 font-semibold '>
-            FAQ
-          </a>
-        </div>
-      )}
+      <AnimatePresence>
+        {openMobileMenu && (
+          <motion.div initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -50 }} className='container fixed z-50 flex flex-col items-center justify-center w-full h-auto py-4 bg-white mt-14'>
+            <a href='#' className='inline-flex justify-center w-full px-4 py-2 font-semibold text-white bg-blue-600 rounded-md'>
+              Halaman Utama
+            </a>
+            <a href='#destination' className='inline-flex justify-center w-full px-4 py-2 font-semibold '>
+              Destinasi
+            </a>
+            <a href='#reservation' className='inline-flex justify-center w-full px-4 py-2 font-semibold '>
+              Cara Reservasi
+            </a>
+            <a href='#findtour' className='inline-flex justify-center w-full px-4 py-2 font-semibold '>
+              Wisata Terdekat
+            </a>
+            <a href='#gallery' className='inline-flex justify-center w-full px-4 py-2 font-semibold '>
+              Galeri
+            </a>
+            <a href='#faq' className='inline-flex justify-center w-full px-4 py-2 font-semibold '>
+              FAQ
+            </a>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
       <nav className='container items-center justify-between hidden mb-4 lg:flex border-t-transparent'>
         <Link to='/'>
           <img src='/Logo.png' alt='' className='pr-2 w-36' />
