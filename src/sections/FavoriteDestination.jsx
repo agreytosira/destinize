@@ -5,7 +5,7 @@ import destinations from '../data/destinations'
 function FavoriteDestination() {
   return (
     <div className='container' id='destination'>
-      <div className='flex flex-col items-center justify-between mb-12 text-center'>
+      <div className='flex flex-col lg:flex-row items-center justify-between mb-12 text-center'>
         <div className='flex flex-col items-center gap-2 lg:items-start'>
           <span className='subtitle'>DESTINASI FAVORIT</span>
           <h2>Temukan Destinasi Favoritmu </h2>
