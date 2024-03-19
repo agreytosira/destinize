@@ -243,7 +243,7 @@ function Footer() {
       </div>
       <div className="container mt-8">
         <div className="flex flex-col items-center justify-between sm:flex-row">
-          <p className=" text-sm lg:mb-4">© 2024, All Rights Reserved</p>
+          <p className=" mb-4 text-sm sm:mb-0">© 2024, All Rights Reserved</p>
           <ul className="flex flex-row flex-wrap items-center justify-center gap-4 text-sm text-slate-500 sm:flex-row lg:gap-8">
             <li>
               <Link
