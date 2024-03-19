@@ -4,7 +4,7 @@ function FindTour() {
       <div className="flex flex-col items-center text-center">
         <div className="space-y-4">
           <span className="subtitle">CARI TEMPAT WISATA</span>
-          <h2 className="text-[3.5rem]">Cari Tempat Wisata Didekatmu</h2>
+          <h2>Cari Tempat Wisata Didekatmu</h2>
           <p>
             Fitur ini memungkinkan kamu untuk mencari tempat wisata atau tempat
             yang sedang populer di daerah kamu dengan begitu kamu akan selalu
