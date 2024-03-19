@@ -15,7 +15,7 @@ function FindTour() {
           <img src="/map.jpg" className="rounded-lg" alt="Map" />
         </div>
       </div>
-      <div className="mt-14 flex flex-col gap-6 sm:grid-cols-3 lg:grid lg:grid-cols-2 ">
+      <div className="mt-14 flex flex-col gap-6 sm:grid sm:grid-cols-2 lg:grid-cols-3">
         <div className="flex items-start gap-4">
           <img src="/find1.png" alt="Find Tour Icon 1" />
           <div className="flex flex-col items-start">
